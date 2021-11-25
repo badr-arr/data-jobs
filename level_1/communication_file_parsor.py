@@ -9,6 +9,10 @@ from ..lib.communication_parsor import parse_string
 
 
 def main() -> None:
+    """
+    Main function to store parsed files into processed dir
+    :return: None
+    """
     input_folder = "./communications"
     output_folder = "./processed"
     json_files_list = [f for f in os.listdir(input_folder) if f.endswith('.json')]

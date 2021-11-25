@@ -9,24 +9,29 @@ class DB:
         self.myCon = sqlite3.connect(database)
         self.cur = self.myCon.cursor()
 
-    def create_table(self, create_table_sql):
+    def execute_query(self, query) -> None:
+        """
+        Execute string query
+        :param query:
+        :return:
+        """
         try:
-            self.cur.execute(create_table_sql)
+            self.cur.execute(query)
         except Error as e:
             print(e)
 
     def insert_dataframe_into_table(self, table_name: str, df: pd.DataFrame) -> None:
         """
-
+        Insert dataframe table into table
         :param table_name:
         :param df:
-        :return:
+        :return: None
         """
         df.to_sql(con=self.myCon, name=table_name, if_exists='replace', index=False)
 
-    def select_all_communications(self, table_name):
+    def select_all(self, table_name) -> None:
         """
-
+        Perform a select query on given table and print rows
         :param table_name:
         :return:
         """
