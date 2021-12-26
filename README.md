@@ -77,5 +77,3 @@ You can write your queries in the file `level_sql/queries.sql`.
 
 If you haven't made technical level 2, you can use data stored in `./sample/communications_sample.csv`.
 No obligation of setting up a database, we'll only focus on the sql code.
-
-Have fun
