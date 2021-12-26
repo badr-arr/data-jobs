@@ -23,7 +23,7 @@ def sample_communication(uuid):
     """
     This function return a random communication.
     """
-    telecoms = random.choice(["paper", "mail", "lifen"])
+    telecoms = random.choice(["paper", "mail", "tab"])
 
     senders = random.choice(
         [
