@@ -10,12 +10,6 @@ Each level uses the previous one, you can re-use your old code.
 
 Don't hesitate to write [shameless code](http://red-badger.com/blog/2014/08/20/i-spent-3-days-with-sandi-metz-heres-what-i-learned/) at first, and then refactor it in the next levels.
 
-For higher levels we are interested in seeing code that is:
-- maintainable
-- clean
-- robust
-- reliable
-
 We are waiting for python (3.9) code.
 Write your program in the corresponding level directory.
 Do not modify given programs.
